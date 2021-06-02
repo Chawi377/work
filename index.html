@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <title>CSS GRID</title>
+  </head>
+  <body>
+    <div class="shadow-effect"></div>
+    <!--Container-->
+    <div class="container">
+      <!--Nav-->
+      <nav>
+        <ul>
+          <li>
+            <a href="https://classroom.google.com" target="_blank">
+              Google Classroom
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://drive.google.com/drive/u/0/my-drive"
+              target="_blank"
+            >
+              Google Drive
+            </a>
+          </li>
+          <li><a href="https://mail.google.com" target="_blank">Gmail</a></li>
+          <li>
+            <a href="https://zoom.us/meeting#/upcoming" target="_blank">Zoom</a>
+          </li>
+        </ul>
+      </nav>
+      <!--End nav-->
+      <!--Aside-->
+      <aside>
+        <h2>Barra lateral</h2>
+        <nav id="aside-nav">
+          <ul>
+            <li id="send-mail">
+              <a href="#">Enviar correo electrónico</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <!--End aside-->
+      <!--Main-->
+      <main>
+        <!--Inner container-->
+        <div class="inner-container">
+          <div class="img-container">
+            <a href="https://classroom.google.com" target="_blank"
+              ><img src="img/classroom.jpg" alt="Google Classroom"
+            /></a>
+          </div>
+          <div class="img-container">
+            <a
+              href="https://drive.google.com/drive/u/0/my-drive"
+              target="_blank"
+              ><img src="img/drive.png" alt="Google drive"
+            /></a>
+          </div>
+          <div class="img-container">
+            <a href="https://mail.google.com" target="_blank"
+              ><img src="img/gmail.png" alt="Gmail"
+            /></a>
+          </div>
+          <div class="img-container">
+            <a href="https://zoom.us/meeting#/upcoming" target="_blank"
+              ><img src="img/zoom.jpg" alt="Zoom"
+            /></a>
+          </div>
+        </div>
+        <!--End inner container-->
+      </main>
+      <!--End main-->
+      <!--Footer-->
+      <footer><p>Emilio Bravo &copy;</p></footer>
+      <!--End footer-->
+    </div>
+    <!--End container-->
+    <!--Send-mail window-->
+    <div class="window">
+      <div class="window-header">Enviar correo electrónico</div>
+      <div class="window-body">
+        <form>
+          <input
+            type="email"
+            id="email"
+            placeholder="Email del receptor"
+            autocomplete="off"
+            required
+          />
+          <button class="btn btn-success" id="send-mail-btn">Aceptar</button>
+        </form>
+      </div>
+    </div>
+    <!--End send-mail window-->
+  </body>
+</html>
